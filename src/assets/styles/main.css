@@ -1,0 +1,62 @@
+/* Import Inter font weights */
+@import '@fontsource/inter/100.css'; /* Thin */
+@import '@fontsource/inter/200.css'; /* Extra Light */
+@import '@fontsource/inter/300.css'; /* Light */
+@import '@fontsource/inter/400.css'; /* Regular */
+@import '@fontsource/inter/500.css'; /* Medium */
+@import '@fontsource/inter/600.css'; /* Semi Bold */
+@import '@fontsource/inter/700.css'; /* Bold */
+@import '@fontsource/inter/800.css'; /* Extra Bold */
+@import '@fontsource/inter/900.css'; /* Black */
+
+:root {
+  --primary-color: #4361ee;
+  --primary-600: #4361ee;
+  --text-color: #333;
+  --background-color: #f8f9fa;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+body {
+  font-family:
+    'Inter',
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    'Open Sans',
+    'Helvetica Neue',
+    sans-serif;
+  color: var(--text-color);
+  background-color: var(--background-color);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}

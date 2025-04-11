@@ -8,5 +8,15 @@
   "arrowParens": "avoid",
   "endOfLine": "auto",
   "vueIndentScriptAndStyle": true,
-  "htmlWhitespaceSensitivity": "strict"
-} 
+  "htmlWhitespaceSensitivity": "strict",
+  "plugins": ["prettier-plugin-tailwindcss"],
+  "tailwindConfig": "./tailwind.config.ts",
+  "overrides": [
+    {
+      "files": "*.vue",
+      "options": {
+        "parser": "vue"
+      }
+    }
+  ]
+}

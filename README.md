@@ -1,70 +1,74 @@
 # Knowji
 
-A Nuxt 3 library for Knowji.
-
-## Features
-
-- Built with Nuxt 3
-- TypeScript support
-- Vue 3 components
-- Modern development tools
-
-## Requirements
-
-- Node.js >= 18.20.6
-- npm >= 9.0.0
-
-## Installation
+## Cài đặt
 
 ```bash
-npm install knowji
+# Cài đặt các dependencies
+npm install
 ```
 
-## Usage
-
-Add to your Nuxt 3 project:
-
-```typescript
-// nuxt.config.ts
-export default defineNuxtConfig({
-  modules: ['knowji']
-})
-```
-
-## Development
-
-1. Clone the repository
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
-3. Start development server:
-   ```bash
-   npm run dev
-   ```
-
-## Building
+## Phát triển
 
 ```bash
-npm run build
-```
+# Khởi động server dev với hot reload tại localhost:3000
+npm run dev
 
-## Linting
-
-```bash
-# Check code style
+# Kiểm tra lỗi định dạng code với Prettier
 npm run format:check
 
-# Fix code style
+# Tự động sửa lỗi định dạng code với Prettier
 npm run format
 
-# Lint code
+# Kiểm tra lỗi linting với ESLint
 npm run lint
 
-# Lint and fix
+# Tự động sửa lỗi linting với ESLint
 npm run lint:fix
 ```
 
-## License
+## Biên dịch và triển khai
 
-MIT
+```bash
+# Sinh code tĩnh
+npm run generate
+
+# Biên dịch cho production
+npm run build
+
+# Chạy bản preview sau khi build
+npm run preview
+```
+
+## Cấu hình
+
+### Prettier
+
+Cấu hình Prettier được định nghĩa trong file `.prettierrc`:
+
+```json
+{
+  "semi": true,
+  "singleQuote": true,
+  "tabWidth": 2,
+  "trailingComma": "es5",
+  "printWidth": 100,
+  "bracketSpacing": true,
+  "arrowParens": "avoid",
+  "endOfLine": "auto",
+  "vueIndentScriptAndStyle": true,
+  "htmlWhitespaceSensitivity": "strict",
+  "plugins": ["prettier-plugin-tailwindcss"],
+  "tailwindConfig": "./tailwind.config.ts"
+}
+```
+
+### ESLint
+
+Cấu hình ESLint được định nghĩa trong file `eslint.config.js`.
+
+## Các thư viện chính
+
+- [Nuxt 3](https://nuxt.com/)
+- [Vue 3](https://vuejs.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [TypeScript](https://www.typescriptlang.org/) 
